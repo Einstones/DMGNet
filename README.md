@@ -22,7 +22,7 @@ For evaluation, we use the same evaluation data as [here](https://drive.google.c
 To train `DMGNet` on SIDD, we use 4 V100 GPUs (80G) and run for 500 epochs:
 
 ```python
-CUDA_VISIBLE_DEVICES=0,1,2,3,  python -m torch.distributed.launch --master_port 50000 --nproc_per_node=2  ../Denoise/train.py
+CUDA_VISIBLE_DEVICES=0,1,2,3,  python -m torch.distributed.launch --master_port 50000 --nproc_per_node=4  ../Denoise/train.py
 ```
 
 More configuration can be founded in `train.py`.
@@ -38,7 +38,7 @@ CUDA_VISIBLE_DEVICES=2,3  python -m torch.distributed.launch --master_port 50004
 
 ### DeBluring
 
-To train `DMGNet` on Deraining Task, you can run:
+To train `DMGNet` on Deraining Task, you can similarly run:
 
 ```python
 CUDA_VISIBLE_DEVICES=2,3  python -m torch.distributed.launch --master_port 50005 --nproc_per_node=2  ../Deblur/train.py
