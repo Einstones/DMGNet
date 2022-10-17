@@ -1,7 +1,5 @@
 # Dynamic Mixed-order Laplacian Deep Network for Image Restoration
 <hr>
-<i>In this paper, we propose an iterative framework with Dynamic Mixed-order Graph Laplacian learning (DMGNet) for image restoration. Specifically, without loss of interpretability, we integrate a Routing Laplacian Relation Module into the degradation mapping functions to flexibly estimate the complicated degradation process. We design the Adaptive Structure-Guided Module to harness the structure information to modulate the reconstruction process for better details preservation. By integrating the flexible mixed-order laplacian function and structured-preserving modulation, we unfold the iterative process into a trainable DNN. We have validated the effectiveness of the proposed method on six image restoration tasks. The experimental results demonstrate its remarkable performance in terms of both quantitative metrics as well as visual quality. Particularly, it supports the satisfied interpretability, and has potential to preserve the subtle image structures and textures..</i>
-
 ## Package dependencies
 The project is built with PyTorch 1.7.1, Python3.7, CUDA10.1. For package dependencies, you can install them by:
 ```bash
